@@ -87,6 +87,3 @@
 # hunting for failed logins
 
 # sudo cat /var/log/auth.log
-
-
-# 
