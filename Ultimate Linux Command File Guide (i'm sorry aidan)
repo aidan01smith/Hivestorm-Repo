@@ -1,0 +1,92 @@
+# Checking Users - look for bash sessions
+
+# cat /etc/passwd
+
+
+# Lock/unlock an account
+
+# passwd -l <username>
+# passwd -u <username>
+
+
+# Check for hidden directories in /home/
+
+# ls -lha /home/
+# sudo ls /home/ 
+
+
+# making sure directories have the correct perms for people to access make sure only the right number of accounts using ls -ld can access certian directories
+
+# cd /home
+# ls -ld
+# ls -lha
+
+
+# accessing debugfs to navigate the volume at the filesystem level
+
+# cd /home
+# sudo debugfs /dev/mapper/ubuntu--vg-ubuntu--lv
+# cd /home
+# ls
+
+
+# use pstree (or any tree command)
+# cd /
+# pstree
+
+
+# listing processes
+
+# ps aux | grep bash
+# ps auxfw
+# ps aux | grep ncat
+# lsof -p <pid>
+
+
+#list all of the runnng network processes to find suspicious processes and what ports they're listening on
+
+# netstat -plunt
+
+
+# everything about your running system on the /proc directory
+# Check cmdline for the running process and its arguments
+
+# ls /proc/
+# cat /proc/2458/
+# cat /proc/2458/cmdline
+
+
+# use the /proc directory with the process ID for NCAT to find the details of the NCAT process
+
+# cat /proc/<pid>/cmdline
+
+
+# searching for files that have been changed after a certain date
+
+# find case1/ -type f  -newerct yyyy-mm-dd | less
+
+
+# checking user .bash_history file for commands executed (+order of execution)
+
+# sudo cat /root/.bash_history
+
+# killing a process (only do this if necessary - do not do it for everything as that could harm the systenm)
+
+#  kill -31 <pid>
+
+
+# check the last logged users
+
+# last
+# w
+# lastlog
+# sudo last -f /var/log/wtmp
+# sudo lastb -f /var/log/btmp
+
+
+# hunting for failed logins
+
+# sudo cat /var/log/auth.log
+
+
+# 
