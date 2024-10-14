@@ -8,6 +8,7 @@
 # passwd -l <username>
 # passwd -u <username>
 
+
 # Alt method for locking/unlocking account
 
 # sudo usermod -L -e 1970-01-01 <username> ## Locks user account starting from date
