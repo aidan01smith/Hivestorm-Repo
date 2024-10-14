@@ -75,6 +75,7 @@
 
 # sudo cat /root/.bash_history
 
+
 # killing a process (only do this if necessary - do not do it for everything as that could harm the systenm)
 
 #  kill -31 <pid>
