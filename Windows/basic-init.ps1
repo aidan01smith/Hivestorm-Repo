@@ -1,5 +1,5 @@
 # Basic Initialization Script to run on a Windows AD box at the beginning of the competition
-# - Locks down Group Policy + Enables Windows Defender, Windows Firewall, and Windows 
+# - Locks down Group Policy + Enables Windows Defender, Windows Firewall, and Installes MalwareBytes AV 
 
 ## How to use:
 # On a windows system run the following command in Admin PS to retrive files --> Then run the script
